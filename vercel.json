@@ -1,0 +1,34 @@
+{
+  "framework": "vercel",
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/**/*.ts",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/health",
+      "dest": "/api/health.ts"
+    },
+    {
+      "src": "/api/simulate",
+      "dest": "/api/simulate.ts"
+    },
+    {
+      "src": "/api/events/stats",
+      "dest": "/api/events/stats.ts"
+    },
+    {
+      "src": "/api/simulations",
+      "dest": "/api/simulations/index.ts"
+    },
+    {
+      "src": "/api/simulations/:id",
+      "dest": "/api/simulations/[id].ts"
+    }
+  ],
+  "installCommand": "npm install",
+  "buildCommand": "npm run build"
+}
