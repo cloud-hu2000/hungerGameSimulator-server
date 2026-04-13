@@ -1,31 +1,24 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "api/**/*.ts",
-      "use": "@vercel/node"
-    }
-  ],
   "routes": [
     {
       "src": "/api/health",
-      "dest": "/api/health.ts"
+      "dest": "/api/health"
     },
     {
       "src": "/api/simulate",
-      "dest": "/api/simulate.ts"
+      "dest": "/api/simulate"
     },
     {
       "src": "/api/events/stats",
-      "dest": "/api/events/stats.ts"
+      "dest": "/api/events/stats"
     },
     {
       "src": "/api/simulations",
-      "dest": "/api/simulations/index.ts"
+      "dest": "/api/simulations"
     },
     {
       "src": "/api/simulations/:id",
-      "dest": "/api/simulations/[id].ts"
+      "dest": "/api/simulations/$id"
     }
   ]
 }
