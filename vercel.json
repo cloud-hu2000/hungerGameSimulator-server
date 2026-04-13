@@ -1,5 +1,4 @@
 {
-  "framework": "vercel",
   "version": 2,
   "builds": [
     {
@@ -28,7 +27,5 @@
       "src": "/api/simulations/:id",
       "dest": "/api/simulations/[id].ts"
     }
-  ],
-  "installCommand": "npm install",
-  "buildCommand": "npm run build"
+  ]
 }

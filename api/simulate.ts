@@ -36,7 +36,7 @@ export default async function handler(req: Request) {
 
   let body: SimulationRequest;
   try {
-    body = await req.json();
+    body = await req.json() as SimulationRequest;
   } catch {
     return new Response(
       JSON.stringify({ success: false, error: 'Invalid JSON body.' }),
