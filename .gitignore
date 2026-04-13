@@ -3,4 +3,16 @@ dist/
 .env
 *.log
 .DS_Store
-.vercel
+.vercel/
+api/*.js
+api/*.js.map
+api/*.d.ts
+api/*.d.ts.map
+api/**/*.js
+api/**/*.js.map
+api/**/*.d.ts
+api/**/*.d.ts.map
+lib/*.js
+lib/*.js.map
+lib/*.d.ts
+lib/*.d.ts.map
